@@ -1,0 +1,445 @@
+
+
+@font-face {
+
+font-family: 'Cuprum';
+
+src: url('fonts/Cuprum-Regular.ttf') format('truetype');
+}
+
+body {
+	font-family: Cuprum;
+	margin: 0 auto; 
+  
+}
+header {
+font-family: sans-serif;
+background-color: #080011;
+display: flex;
+justify-content: space-between;
+
+}
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+.logo-img{
+width: 200px;
+}
+.tel ul li{
+ font-size: 25px;
+ list-style-type: none;
+ float: left;
+ padding: 20px 15px;
+ color: #fff;
+ margin-right: 10px;
+
+ }
+ .tel ul li a{
+ color: #6f8ca7;
+ text-decoration: none;
+ 
+ }
+.tel ul li a:hover {
+opacity: 1;
+background: #002137;
+transition:all 0.5s;
+color: white;
+}
+.call {
+width: 29px;
+margin-bottom: -5px;
+margin-left: 3px;
+}
+.call:hover {
+transform: scale(1.3);
+}
+.preim p {
+font-size: 50px;
+margin: 40px;
+display: flex;
+justify-content: center;
+}
+/* СЛАЙДЕР */
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  
+  margin:0 auto;
+  border: solid 2px;
+  background-image: url(images/HERO2.png);
+  background-attachment: fixed;
+	background-size: cover; 
+}
+
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:100px 150px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  margin: auto;
+  
+}
+.carousel-item p {
+color: white;
+font-size: 50px;
+font-family: sans-serif;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 35px;
+
+}
+
+.arrow-prev{
+  left: 30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+  
+
+}
+
+.arrow-next{
+    right: 30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+}
+.content {
+   
+    min-width: 360px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content img {
+    float: left;
+    width: 38%;
+    border: 15px solid #d4d4d4;
+    margin-right: 40px;
+    margin-top: 15px;
+    line-height: 1px;
+
+
+
+}
+.content h2{
+    font-size: 120%;
+    color: #2c3e50;
+
+}
+.content aside{
+    font-size: 75%;
+    color: #9c9c9c;
+}
+.text {
+    float: left;
+    font-size: 34px;
+}
+
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+
+  }
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+/* КОНЕЦ СЛАЙДЕРА*/
+/*ТОВАРНЫЕ БЛОКИ*/
+.u-section-1 .u-sheet-1 {
+  min-height: 731px;
+}
+
+.u-section-1 .u-product-1 {
+  min-height: 562px;
+  margin-top: 13px;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 100px 400px 0 376px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-group-1 {
+  width: 518px;
+  min-height: 482px;
+  height: auto;
+  margin: -370px 116px 0 auto;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-line-1 {
+  width: 43px;
+  height: 3px;
+  transform-origin: left center 0px;
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 60px 0 0;
+}
+
+.u-section-1 .u-product-price-1 {
+  margin: 22px auto 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  letter-spacing: 3px;
+  background-image: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 26px auto 0 0;
+  padding: 10px 65px;
+}
+
+.u-section-1 .u-text-3 {
+ 
+  margin: 70px auto 60px;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none none solid;
+  padding: 0;
+}
+.bord {
+border: 7px solid #737373;
+max-height: 400px;
+}
+
+/*БЛОК ПЕРСОНАЛА*/
+.personal {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+.lichnost {
+margin: 40px;
+}
+.lichnost img {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+.lichnost h1 {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 40px;
+}
+.lichnost p {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 20px;
+}
+/* БУДУЩИЕ РАБОТНИКИ*/
+.works {
+
+}
+.works img {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+.works p {
+max-width: 1279px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 35px;
+margin-top: 40px;
+}
+/* FOOTER*/
+footer {
+	background-color: #3b3b3b;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #3b3b3b;
+	color: #FFFFFF;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	border-top-width: 2px;
+}
+/* рассылка*/
+.elmail input {
+width: 400px;
+height: 25px;
+}
+.elmail {
+margin: 0 auto;
+display: flex;
+justify-content: center;	
+}
+.buttone {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+padding: 23px;
+}
+.buttone img {
+width: 300px;
+}
+
+.subscribe:hover {
+transform: scale(1.1);
+}
+/*БЛОК "О НАС"*/
+.o-nas {
+margin: 0 auto;
+display: flex;
+justify-content: center; 
+max-width: 1279px;
+padding: 20px;
+}
+.o-nas-txt {
+padding-left: 30px;
+}
+.o-nas-txt p {
+font-size: 25px;
+color: white;
+}
+@media (width: 1366px) and (height: 1024px) {
+.preim p {
+font-size: 65px;
+}
+.carousel-item {
+  padding:80px 150px;
+}
+.u-section-1 .u-container-layout-1 {
+  padding: 100px 170px 0 170px;
+}
+.u-section-1 .u-group-1 {
+  width: 500px;
+  margin: -370px 0px 0 auto;
+}
+.personal {
+display: block;
+}
+.lichnost img {
+width: 300px;
+}
+.lichnost h1 {
+font-size: 50px;
+}
+.lichnost p {
+font-size: 27px;
+}
+.elmail input {
+width: 590px;
+height: 40px;
+}
+}
+@media (width: 1024px) and (height: 1366px) {
+.preim p {
+font-size: 61px;
+}
+.carousel-item {
+  padding:50px 150px;
+}
+.text {
+font-size: 29px;
+}
+.u-section-1 .u-container-layout-1 {
+  padding: 100px 50px 0 50px;
+}
+.u-section-1 .u-group-1 {
+  width: 500px;
+  margin: -370px 0px 0 auto;
+}
+.personal {
+display: block;
+}
+.lichnost img {
+width: 300px;
+}
+.lichnost h1 {
+font-size: 50px;
+}
+.lichnost p {
+font-size: 27px;
+}
+.works img {
+width: 1000px;
+}
+.works p {
+padding: 25px;
+}
+.elmail input {
+width: 600px;
+height: 50px;
+}
+}
